@@ -286,6 +286,81 @@ Transform:
   - {fileID: 754191274}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &249462662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 249462663}
+  - component: {fileID: 249462665}
+  - component: {fileID: 249462664}
+  m_Layer: 0
+  m_Name: Road 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &249462663
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249462662}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7085981, w: -0.7056124}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 298928752}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.242}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -57.936825, y: 188.16656}
+  m_SizeDelta: {x: 131.8969, y: 103.7971}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &249462664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249462662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 80c45bd17a4fe4442a611d0d95dcd594, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &249462665
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249462662}
+  m_CullTransparentMesh: 1
 --- !u!1 &298928751
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,12 +390,17 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1441435609}
   - {fileID: 398985329}
-  - {fileID: 824480369}
+  - {fileID: 2101360101}
   - {fileID: 393896123}
   - {fileID: 676152757}
+  - {fileID: 249462663}
+  - {fileID: 1976244542}
   - {fileID: 1224595171}
+  - {fileID: 824480369}
+  - {fileID: 327248600}
+  - {fileID: 1441435609}
+  - {fileID: 496881168}
   - {fileID: 1308455102}
   - {fileID: 1359859888}
   m_Father: {fileID: 320695436}
@@ -450,6 +530,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b01e8a5d0f2ae45aef2c6785ce51e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &327248599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 327248600}
+  - component: {fileID: 327248602}
+  - component: {fileID: 327248601}
+  m_Layer: 0
+  m_Name: Road 9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &327248600
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327248599}
+  m_LocalRotation: {x: -0, y: -0, z: 0.9999999, w: -0.0004778832}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 298928752}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -179.945}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 278.51617, y: 178.40912}
+  m_SizeDelta: {x: 151.706, y: 58.1592}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &327248601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327248599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 80c45bd17a4fe4442a611d0d95dcd594, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &327248602
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327248599}
+  m_CullTransparentMesh: 1
 --- !u!1 &393896122
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,7 +617,7 @@ GameObject:
   - component: {fileID: 393896125}
   - component: {fileID: 393896124}
   m_Layer: 0
-  m_Name: Road (2)
+  m_Name: Road 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -484,8 +639,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.242}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -364.57526, y: 189.33458}
-  m_SizeDelta: {x: 130.2821, y: 103.7971}
+  m_AnchoredPosition: {x: -364.6105, y: 180.99017}
+  m_SizeDelta: {x: 146.971, y: 103.7971}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &393896124
 MonoBehaviour:
@@ -537,7 +692,7 @@ GameObject:
   - component: {fileID: 398985331}
   - component: {fileID: 398985330}
   m_Layer: 0
-  m_Name: Road (7)
+  m_Name: Road 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -559,8 +714,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 71.83403, y: -36.8047}
-  m_SizeDelta: {x: 155.3613, y: 51.5924}
+  m_AnchoredPosition: {x: 69.26539, y: -36.8047}
+  m_SizeDelta: {x: 215.2958, y: 51.5924}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &398985330
 MonoBehaviour:
@@ -599,6 +754,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398985328}
+  m_CullTransparentMesh: 1
+--- !u!1 &496881167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 496881168}
+  - component: {fileID: 496881170}
+  - component: {fileID: 496881169}
+  m_Layer: 0
+  m_Name: Road 11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &496881168
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496881167}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 298928752}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -480.34262, y: -36.8047}
+  m_SizeDelta: {x: 185.4081, y: 51.5924}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &496881169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496881167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 80c45bd17a4fe4442a611d0d95dcd594, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &496881170
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496881167}
   m_CullTransparentMesh: 1
 --- !u!1 &596183885
 GameObject:
@@ -985,7 +1215,7 @@ GameObject:
   - component: {fileID: 676152759}
   - component: {fileID: 676152758}
   m_Layer: 0
-  m_Name: Road (3)
+  m_Name: Road 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1007,8 +1237,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.242}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -365.06595, y: 36.568504}
-  m_SizeDelta: {x: 114.1449, y: 103.7971}
+  m_AnchoredPosition: {x: -365.06613, y: 36.523804}
+  m_SizeDelta: {x: 142.5553, y: 103.7971}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &676152758
 MonoBehaviour:
@@ -1264,7 +1494,7 @@ GameObject:
   - component: {fileID: 824480371}
   - component: {fileID: 824480370}
   m_Layer: 0
-  m_Name: Road (1)
+  m_Name: Road 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1286,8 +1516,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -92.43271, y: 107}
-  m_SizeDelta: {x: 477.8841, y: 52.6121}
+  m_AnchoredPosition: {x: -96.12201, y: 107}
+  m_SizeDelta: {x: 485.2628, y: 52.6121}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &824480370
 MonoBehaviour:
@@ -1516,7 +1746,7 @@ GameObject:
   - component: {fileID: 1224595173}
   - component: {fileID: 1224595172}
   m_Layer: 0
-  m_Name: Road (4)
+  m_Name: Road 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1538,8 +1768,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.242}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 176, y: 188.3}
-  m_SizeDelta: {x: 130.2821, y: 103.7971}
+  m_AnchoredPosition: {x: 175.9696, y: 181.09673}
+  m_SizeDelta: {x: 144.6888, y: 103.7971}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1224595172
 MonoBehaviour:
@@ -1666,7 +1896,7 @@ GameObject:
   - component: {fileID: 1308455104}
   - component: {fileID: 1308455103}
   m_Layer: 0
-  m_Name: Road (5)
+  m_Name: Road 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1688,8 +1918,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.242}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 175.8, y: 35.724636}
-  m_SizeDelta: {x: 111.444, y: 101.1075}
+  m_AnchoredPosition: {x: 175.3923, y: 42.7814}
+  m_SizeDelta: {x: 132.7921, y: 103.7739}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1308455103
 MonoBehaviour:
@@ -1741,7 +1971,7 @@ GameObject:
   - component: {fileID: 1359859890}
   - component: {fileID: 1359859889}
   m_Layer: 0
-  m_Name: Road (6)
+  m_Name: Road 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1763,8 +1993,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.242}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40.262833, y: -131.58458}
-  m_SizeDelta: {x: 161.8303, y: 103.7971}
+  m_AnchoredPosition: {x: -40.256504, y: -130.0906}
+  m_SizeDelta: {x: 164.8183, y: 103.7971}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359859889
 MonoBehaviour:
@@ -1860,7 +2090,7 @@ GameObject:
   - component: {fileID: 1441435611}
   - component: {fileID: 1441435610}
   m_Layer: 0
-  m_Name: Road
+  m_Name: Road 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1882,8 +2112,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200.32819, y: -36.8047}
-  m_SizeDelta: {x: 262.0932, y: 51.5924}
+  m_AnchoredPosition: {x: -188.43558, y: -36.8047}
+  m_SizeDelta: {x: 300.3918, y: 51.5924}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1441435610
 MonoBehaviour:
@@ -2494,6 +2724,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928904688}
   m_CullTransparentMesh: 1
+--- !u!1 &1976244541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1976244542}
+  - component: {fileID: 1976244544}
+  - component: {fileID: 1976244543}
+  m_Layer: 0
+  m_Name: Road 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1976244542
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976244541}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7085981, w: -0.7056124}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 298928752}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.242}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -365.7, y: -123.19252}
+  m_SizeDelta: {x: 177.0498, y: 103.7971}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1976244543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976244541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 80c45bd17a4fe4442a611d0d95dcd594, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1976244544
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976244541}
+  m_CullTransparentMesh: 1
 --- !u!1 &2083907796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2630,6 +2935,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2083907796}
+  m_CullTransparentMesh: 1
+--- !u!1 &2101360100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2101360101}
+  - component: {fileID: 2101360103}
+  - component: {fileID: 2101360102}
+  m_Layer: 0
+  m_Name: Road 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2101360101
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101360100}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 298928752}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 265.49985, y: -36.8047}
+  m_SizeDelta: {x: 178.0959, y: 51.5924}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2101360102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101360100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 80c45bd17a4fe4442a611d0d95dcd594, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2101360103
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101360100}
   m_CullTransparentMesh: 1
 --- !u!1 &2134427095
 GameObject:
