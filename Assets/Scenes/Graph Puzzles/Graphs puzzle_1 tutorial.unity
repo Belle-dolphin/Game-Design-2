@@ -1914,7 +1914,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &596183886
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1931,7 +1931,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 172.1, y: -293.8}
+  m_AnchoredPosition: {x: 168, y: -325}
   m_SizeDelta: {x: 914.4656, y: 137.189}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &596183887
@@ -5592,7 +5592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 65.3, y: -264.2}
+  m_AnchoredPosition: {x: 62, y: -304}
   m_SizeDelta: {x: 686.1571, y: 88.3239}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1880126929
@@ -5616,7 +5616,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Now try it yourself! You need to go from the top left corner to the bottom
-    left!
+    right!
 
     Press Space to Continue'
   m_isRightToLeft: 0
@@ -5712,7 +5712,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1928904689
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5729,7 +5729,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 160.2, y: -290.01}
+  m_AnchoredPosition: {x: 158, y: -318}
   m_SizeDelta: {x: 889.0355, y: 135.9781}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1928904690
@@ -5818,7 +5818,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0.000015258789, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6350,7 +6350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2083907797
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6367,7 +6367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 49.4, y: -257.1}
+  m_AnchoredPosition: {x: 45, y: -303}
   m_SizeDelta: {x: 668.498, y: 79.2836}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2083907798
