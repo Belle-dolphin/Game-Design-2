@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 67502184}
   - component: {fileID: 67502183}
   - component: {fileID: 67502182}
+  - component: {fileID: 67502186}
   m_Layer: 0
   m_Name: Drag 2
   m_TagString: FullContainer
@@ -176,6 +177,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1197554874}
+  objectToDrag: {fileID: 67502180}
+  objectDragToPos: {fileID: 781142184}
+  isLocked: 0
 --- !u!225 &67502183
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -226,6 +230,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67502180}
   m_CullTransparentMesh: 0
+--- !u!114 &67502186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67502180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 14
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 67502182}
+          m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+          m_MethodName: DropObject
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &90046796
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,6 +900,7 @@ GameObject:
   - component: {fileID: 263725319}
   - component: {fileID: 263725318}
   - component: {fileID: 263725317}
+  - component: {fileID: 263725321}
   m_Layer: 0
   m_Name: Drag 3
   m_TagString: FullContainer
@@ -907,6 +941,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1197554874}
+  objectToDrag: {fileID: 263725315}
+  objectDragToPos: {fileID: 1744118970}
+  isLocked: 0
 --- !u!225 &263725318
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -957,6 +994,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263725315}
   m_CullTransparentMesh: 0
+--- !u!114 &263725321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263725315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 14
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 263725317}
+          m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+          m_MethodName: DropObject
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &281763084
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,6 +2428,7 @@ GameObject:
   - component: {fileID: 1165521556}
   - component: {fileID: 1165521555}
   - component: {fileID: 1165521554}
+  - component: {fileID: 1165521558}
   m_Layer: 0
   m_Name: Drag 5
   m_TagString: FullContainer
@@ -2402,6 +2469,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1197554874}
+  objectToDrag: {fileID: 1165521552}
+  objectDragToPos: {fileID: 228015635}
+  isLocked: 0
 --- !u!225 &1165521555
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2452,6 +2522,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165521552}
   m_CullTransparentMesh: 0
+--- !u!114 &1165521558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165521552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 14
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1165521554}
+          m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+          m_MethodName: DropObject
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1197554871
 GameObject:
   m_ObjectHideFlags: 0
@@ -2613,6 +2712,7 @@ GameObject:
   - component: {fileID: 1379949688}
   - component: {fileID: 1379949687}
   - component: {fileID: 1379949686}
+  - component: {fileID: 1379949690}
   m_Layer: 0
   m_Name: Drag 1
   m_TagString: FullContainer
@@ -2653,6 +2753,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1197554874}
+  objectToDrag: {fileID: 1379949684}
+  objectDragToPos: {fileID: 1575252009}
+  isLocked: 0
 --- !u!225 &1379949687
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2703,6 +2806,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1379949684}
   m_CullTransparentMesh: 0
+--- !u!114 &1379949690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379949684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 14
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1379949686}
+          m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+          m_MethodName: DropObject
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1396972438
 GameObject:
   m_ObjectHideFlags: 0
@@ -3442,6 +3574,7 @@ GameObject:
   - component: {fileID: 1945896295}
   - component: {fileID: 1945896294}
   - component: {fileID: 1945896293}
+  - component: {fileID: 1945896297}
   m_Layer: 0
   m_Name: Drag 4
   m_TagString: FullContainer
@@ -3482,6 +3615,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1197554874}
+  objectToDrag: {fileID: 1945896291}
+  objectDragToPos: {fileID: 1396972438}
+  isLocked: 0
 --- !u!225 &1945896294
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3532,6 +3668,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945896291}
   m_CullTransparentMesh: 0
+--- !u!114 &1945896297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945896291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 14
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1945896293}
+          m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+          m_MethodName: DropObject
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2058371281
 GameObject:
   m_ObjectHideFlags: 0
