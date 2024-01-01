@@ -30,7 +30,7 @@ public class AddScene : MonoBehaviour
                 GameObject[] rootObjects = loadedScene.GetRootGameObjects();
                 foreach (GameObject obj in rootObjects)
                 {
-                    obj.transform.position = new Vector3(obj.transform.position.x, obj.transform.position.y, 5f);
+                    obj.transform.position = new Vector3(obj.transform.position.x, obj.transform.position.y, -15f);
                 }
             }
         }
