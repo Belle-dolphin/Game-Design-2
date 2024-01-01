@@ -1,38 +1,62 @@
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class AddScene : MonoBehaviour
 {
-    // Name of the scene to be loaded additively
     public string sceneNameToAdd;
-    public GameObject taskbarIconPrefab;
+    public GameObject taskbarIcon;
+
+    bool iconLoaded = false;
+    Vector3 vectorMainMenu = Vector3.zero;
+
     int loaded = 0;
 
     private void OnMouseDown()
     {
+        loaded++;
         // Check if the scene is not already loaded
         if (!SceneManager.GetSceneByName(sceneNameToAdd).isLoaded)
         {
-            loaded++;
             // Load the scene additively
             SceneManager.LoadScene(sceneNameToAdd, LoadSceneMode.Additive);
 
-            // Instantiate the taskbarIcon prefab
-            GameObject taskbarIconInstance = Instantiate(taskbarIconPrefab, new Vector3(-4.45f, -4.75f, 0f), Quaternion.identity);
+            if (!iconLoaded) 
+            {
+                Instantiate(taskbarIcon, new Vector3(-4.45f, -4.75f, 0f), Quaternion.identity);
+                iconLoaded = true;  
+            }
+            
         }
         else
         {
-            // If already loaded, move the scene offscreen by changing the z-coordinate to 5
+
             Scene loadedScene = SceneManager.GetSceneByName(sceneNameToAdd);
-            if (loadedScene.isLoaded)
+
+            GameObject mainMenuObject = GameObject.Find("MainMenu"); // Assuming the GameObject is named "MainMenu"
+            if (loaded == 2)
             {
-                GameObject[] rootObjects = loadedScene.GetRootGameObjects();
-                foreach (GameObject obj in rootObjects)
-                {
-                    obj.transform.position = new Vector3(obj.transform.position.x, obj.transform.position.y, -15f);
-                }
+                vectorMainMenu = new Vector3(mainMenuObject.transform.localPosition.x, mainMenuObject.transform.localPosition.y, mainMenuObject.transform.localPosition.z);
+
             }
+
+            if (loaded % 2 == 0)
+            {
+                RectTransform canvasRectTransform = loadedScene.GetRootGameObjects()[0].GetComponentInChildren<Canvas>().GetComponent<RectTransform>();
+                mainMenuObject.transform.SetParent(canvasRectTransform);
+                mainMenuObject.transform.localPosition = new Vector3(-9999f, mainMenuObject.transform.localPosition.y, mainMenuObject.transform.localPosition.z);
+            }
+
+            if (loaded % 2 == 1)
+            {
+                RectTransform canvasRectTransform = loadedScene.GetRootGameObjects()[0].GetComponentInChildren<Canvas>().GetComponent<RectTransform>();
+                mainMenuObject.transform.SetParent(canvasRectTransform);
+                mainMenuObject.transform.localPosition = vectorMainMenu;
+            }
+
+
+
         }
     }
 }

@@ -659,7 +659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNameToAdd: Graphs puzzle_1 tutorial
-  taskbarIconPrefab: {fileID: 3570208197430293059, guid: 4cee721505add0846a52c11917317bf4, type: 3}
+  taskbarIcon: {fileID: 3570208197430293059, guid: 4cee721505add0846a52c11917317bf4, type: 3}
 --- !u!212 &2012482175
 SpriteRenderer:
   m_ObjectHideFlags: 0
