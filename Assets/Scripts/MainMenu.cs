@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    
+    void Start()
+    {
+        //Reset all local player data
+        PlayerPrefs.DeleteAll();
+    }
+
     // Start is called before the first frame update
     public void Play() {
         Debug.Log("Play");

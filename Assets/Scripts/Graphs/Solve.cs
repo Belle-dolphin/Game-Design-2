@@ -1,6 +1,9 @@
 using UnityEngine;
 using System;
 using System.Collections.Generic;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Solve : MonoBehaviour
 {
@@ -10,6 +13,11 @@ public class Solve : MonoBehaviour
     // List for the solution (editable in the inspector)
     [SerializeField]
     private List<int> solution = new List<int>();
+
+    public GameObject resultScreenObject;
+    public TextMeshProUGUI ConditionText;
+    public TextMeshProUGUI ButtonText;
+    private bool success = false;
 
     // Function to compare road IDs with the solution
     public bool CompareRoadIDs()
@@ -64,13 +72,45 @@ public class Solve : MonoBehaviour
 
     public void CheckSolution()
     {
-        if (CompareRoadIDs())
-        {
-            Debug.Log("You win!");
-        }
-        else
-        {
-            Debug.Log("You lose!");
+        success = CompareRoadIDs();
+        
+        Debug.Log("Checking solution...");
+        Debug.Log(CompareRoadIDs()
+            ? "Road IDs match the solution"
+            : "Road IDs do not match the solution");
+
+        showResult(success);
+    }
+
+
+    public void showResult(bool result){
+        if(result){
+            Debug.Log("Player won");
+            ConditionText.SetText("You win!");
+            ButtonText.SetText("Next Level");
+            resultScreenObject.SetActive(true);
+        } else {
+            Debug.Log("Player lost");
+            ConditionText.SetText("You lose!");
+            ButtonText.SetText("Retry");
+            resultScreenObject.SetActive(true);
         }
     }
+
+    public void resetLevel(){
+        PlayerPrefs.SetInt("TutorialGraphs", 1);
+        PlayerPrefs.Save();
+    }
+
+    public void onClick(){
+        Debug.Log("Player clicked");
+        Debug.Log("Current value of success: " + success);
+        if(success){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        } else {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            resetLevel();
+        }
+    }
+
 }

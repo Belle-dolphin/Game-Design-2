@@ -20,16 +20,10 @@ public class Road : MonoBehaviour
     public void onClick(){
 
         if(state == false){
-            ChangeColor(Color.red);
-            valueCounter.AddWeight(value.getWeight());
-            solve.AddRoadID(id);
-            state = true;
+            enableRoad();
         }
         else{
-            ChangeColor(Color.white);
-            valueCounter.SubtractWeight(value.getWeight());
-            solve.RemoveRoadID(id);
-            state = false;
+            disableRoad();
         }
     }
 
@@ -40,5 +34,19 @@ public class Road : MonoBehaviour
         {
             targetImage.color = newColor;
         }
+    }
+
+    public void enableRoad(){
+            ChangeColor(Color.red);
+            valueCounter.AddWeight(value.getWeight());
+            solve.AddRoadID(id);
+            state = true;
+    }
+
+    public void disableRoad(){
+            ChangeColor(Color.white);
+            valueCounter.SubtractWeight(value.getWeight());
+            solve.RemoveRoadID(id);
+            state = false;
     }
 }
