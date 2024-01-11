@@ -14,6 +14,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public bool isLocked;
 
+    public BlocksCounting blockCounting;
+
     Vector2 objectinitialPos;
 
     void Start()
@@ -79,6 +81,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         {
             isLocked = true;
             objectToDrag.transform.position = objectDragToPos.transform.position; // Sets the object to drag to the object to drag to
+            blockCounting.SetBlockNum();
         } 
         else
         {

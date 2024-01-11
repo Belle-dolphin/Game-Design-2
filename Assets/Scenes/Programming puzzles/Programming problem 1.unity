@@ -294,6 +294,7 @@ MonoBehaviour:
   - {fileID: 2090045573}
   - {fileID: 617466374}
   - {fileID: 162956591}
+  background: {fileID: 0}
 --- !u!4 &114122200
 Transform:
   m_ObjectHideFlags: 0
@@ -959,6 +960,7 @@ MonoBehaviour:
   objectToDrag: {fileID: 304197166}
   objectDragToPos: {fileID: 1557663756}
   isLocked: 0
+  blockCounting: {fileID: 1408871856}
 --- !u!225 &304197173
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2076,9 +2078,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1408871854}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83b01e8a5d0f2ae45aef2c6785ce51e3, type: 3}
+  m_Script: {fileID: 11500000, guid: fec91e4041a9290448bdc624f7639d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalBlocks: 1
+  sceneNameToAdd: Programming problem 2
 --- !u!1 &1474289521
 GameObject:
   m_ObjectHideFlags: 0

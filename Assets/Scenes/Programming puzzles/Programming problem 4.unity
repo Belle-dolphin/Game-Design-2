@@ -968,6 +968,7 @@ MonoBehaviour:
   - {fileID: 494952252}
   - {fileID: 447848905}
   - {fileID: 196690639}
+  background: {fileID: 0}
 --- !u!4 &613894776
 Transform:
   m_ObjectHideFlags: 0
@@ -1724,6 +1725,7 @@ MonoBehaviour:
   objectToDrag: {fileID: 882213146}
   objectDragToPos: {fileID: 1497402627}
   isLocked: 0
+  blockCounting: {fileID: 1417643119}
 --- !u!225 &882213149
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1860,6 +1862,7 @@ MonoBehaviour:
   objectToDrag: {fileID: 1020891220}
   objectDragToPos: {fileID: 867682663}
   isLocked: 0
+  blockCounting: {fileID: 1417643119}
 --- !u!225 &1020891223
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2557,9 +2560,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1417643117}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83b01e8a5d0f2ae45aef2c6785ce51e3, type: 3}
+  m_Script: {fileID: 11500000, guid: fec91e4041a9290448bdc624f7639d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalBlocks: 4
+  sceneNameToAdd: Programming problem 5
 --- !u!1 &1429954549
 GameObject:
   m_ObjectHideFlags: 0
@@ -2719,6 +2724,7 @@ MonoBehaviour:
   objectToDrag: {fileID: 1453932289}
   objectDragToPos: {fileID: 218489445}
   isLocked: 0
+  blockCounting: {fileID: 1417643119}
 --- !u!225 &1453932292
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2943,6 +2949,7 @@ MonoBehaviour:
   objectToDrag: {fileID: 1534961160}
   objectDragToPos: {fileID: 1636032120}
   isLocked: 0
+  blockCounting: {fileID: 1417643119}
 --- !u!225 &1534961163
 CanvasGroup:
   m_ObjectHideFlags: 0
