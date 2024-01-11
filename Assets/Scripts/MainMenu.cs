@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
-{
-    
+{   
     void Start()
     {
         //Reset all local player data
@@ -16,6 +15,7 @@ public class MainMenu : MonoBehaviour
     public void Play() {
         Debug.Log("Play");
         //Load main scene
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
@@ -24,4 +24,5 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Quit");
         Application.Quit();
     }
+    
 }
