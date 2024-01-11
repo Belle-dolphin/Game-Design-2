@@ -17,4 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Programming puzzles/Programming problem 1.unity
     guid: 17656bcf117660b46a4b7460a477cdc9
+  - enabled: 1
+    path: Assets/Scenes/Programming puzzles/Programming problem 2.unity
+    guid: d56a4c96afd312c41ba7067fdb7a8a51
+  - enabled: 1
+    path: Assets/Scenes/Programming puzzles/Programming problem 3.unity
+    guid: 610ef8ad616cab545834b6b9d95f03f7
+  - enabled: 1
+    path: Assets/Scenes/Programming puzzles/Programming problem 4.unity
+    guid: d3464465ce9adba419b2165907cd79bd
+  - enabled: 1
+    path: Assets/Scenes/Programming puzzles/Programming problem 5.unity
+    guid: fabd93f148132bb448628c12902cdc9e
   m_configObjects: {}
