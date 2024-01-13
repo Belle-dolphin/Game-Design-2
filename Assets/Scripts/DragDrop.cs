@@ -77,7 +77,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     {
         // Gets the distance between the object to drag and the object to drag to
         float distance = Vector3.Distance(objectToDrag.transform.position, objectDragToPos.transform.position);
-        if (distance < 200) 
+        if (distance < 120) 
         {
             isLocked = true;
             objectToDrag.transform.position = objectDragToPos.transform.position; // Sets the object to drag to the object to drag to
