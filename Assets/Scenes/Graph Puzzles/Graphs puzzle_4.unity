@@ -1290,8 +1290,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 252.51953, y: -67.761215}
-  m_SizeDelta: {x: 206.9508, y: 25.4899}
+  m_AnchoredPosition: {x: 285.65662, y: 142}
+  m_SizeDelta: {x: 135.7512, y: 25.4899}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &370208522
 MonoBehaviour:
@@ -1767,7 +1767,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &441248625
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1785,7 +1785,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.242}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -116.9851, y: 37.5191}
+  m_AnchoredPosition: {x: -47, y: 36}
   m_SizeDelta: {x: 117.3401, y: 104.0763}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &441248626
@@ -3523,7 +3523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a8507703f1772428494f28ff03e4e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 2
+  weight: 6
   RoadText: {fileID: 105962108}
 --- !u!114 &824480373
 MonoBehaviour:
@@ -5309,7 +5309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96082de170d5a843a295b6332ba9665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solution: 0f00000003000000070000000c0000000b00000002000000
+  solution: 0f000000030000000c000000060000000800000007000000
   resultScreenObject: {fileID: 50068493}
   ConditionText: {fileID: 623380990}
   ButtonText: {fileID: 587445821}
