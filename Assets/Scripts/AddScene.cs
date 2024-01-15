@@ -18,8 +18,17 @@ public class AddScene : MonoBehaviour
 
             if (!iconLoaded)
             {
-                Instantiate(taskbarIcon, new Vector3(-4.45f, -4.75f, 0f), Quaternion.identity);
-                iconLoaded = true;
+                if (sceneNameToAdd == "Graphs puzzle_1 tutorial")
+                {
+                    Instantiate(taskbarIcon, new Vector3(-4.45f, -4.75f, 0f), Quaternion.identity);
+                    iconLoaded = true;
+                }
+                else
+                {
+                    Instantiate(taskbarIcon, new Vector3(-0.5f, -4.75f, 0f), Quaternion.identity);
+                    iconLoaded = true;
+                }
+                
             }
         }
     }
