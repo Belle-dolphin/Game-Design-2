@@ -9,12 +9,42 @@ public class OffScreen : MonoBehaviour
     Vector3 vectorMainMenu = Vector3.zero;
 
     int loaded = 0;
+    int changed = 0;
+    int nrPuzzels = 5; // puzzels to solve TODO make public.
 
     private void OnMouseDown()
     {
         loaded++;
+
+        if (!SceneManager.GetSceneByName(sceneNameToAdd).isLoaded)
+        {
+            // scene changed
+            changed++;
+            if (sceneNameToAdd.Contains("Programming problem"))
+            {
+                if (changed % nrPuzzels == 1)
+                {
+                    sceneNameToAdd = "Programming problem 2";
+                }
+                else if (changed % nrPuzzels == 2)
+                {
+                    sceneNameToAdd = "Programming problem 3";
+                }
+                else if (changed % nrPuzzels == 3)
+                {
+                    sceneNameToAdd = "Programming problem 4";
+                }
+                else if (changed % nrPuzzels == 4)
+                {
+                    sceneNameToAdd = "Programming problem 5";
+                }
+                else if (changed % nrPuzzels == 0) { sceneNameToAdd = "Programming problem 1"; }
+            }
+        }
+
         UnityEngine.SceneManagement.Scene loadedScene = SceneManager.GetSceneByName(sceneNameToAdd);
         GameObject mainMenuObject = GameObject.Find("MainMenu");
+        
         if (loaded == 1)
         {
             vectorMainMenu = mainMenuObject.transform.localPosition;
