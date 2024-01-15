@@ -3358,7 +3358,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571555346}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1571555349
 Camera:
   m_ObjectHideFlags: 0
@@ -4192,8 +4192,8 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 359965390}
   - {fileID: 1197554875}
+  - {fileID: 359965390}
   - {fileID: 90046799}
   - {fileID: 281763086}
   - {fileID: 1571555350}
