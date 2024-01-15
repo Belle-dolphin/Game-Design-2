@@ -9,6 +9,7 @@ public class BlocksCounting : MonoBehaviour
     public int totalBlocks; // Set this to the total number of blocks
     private int correctBlocks = 0;
     public string sceneNameToAdd;
+    public string sceneNameToDelete;
     public Button nextSceneButton;
 
     private void Start()
@@ -33,7 +34,10 @@ public class BlocksCounting : MonoBehaviour
 
     public void LoadNextScene()
     {
-        // Load the next scene
-        SceneManager.LoadScene(sceneNameToAdd);
+        // Unload the current scene
+        SceneManager.UnloadSceneAsync(sceneNameToDelete);
+
+        // Load the next scene additively
+        SceneManager.LoadScene(sceneNameToAdd, LoadSceneMode.Additive);
     }
 }

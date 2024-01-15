@@ -1320,6 +1320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalBlocks: 5
   sceneNameToAdd: Programming problem 1
+  sceneNameToDelete: Programming problem 5
   nextSceneButton: {fileID: 1772086708}
 --- !u!1 &651622874
 GameObject:
