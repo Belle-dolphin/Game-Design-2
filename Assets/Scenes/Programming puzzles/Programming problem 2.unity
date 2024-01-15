@@ -802,15 +802,15 @@ Transform:
   m_GameObject: {fileID: 336272349}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 933.7339, y: 367.65262, z: -7.3183894}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -29.549374, y: -193.89078, z: -8.233188}
+  m_LocalScale: {x: 1.1249999, y: 1.1249999, z: 1.1249999}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 548279701}
   - {fileID: 96946438}
   - {fileID: 421678271}
   - {fileID: 102444286}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1189646594}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &404603433
 GameObject:
@@ -1351,7 +1351,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507208025}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &507208028
 Camera:
   m_ObjectHideFlags: 0
@@ -1359,7 +1359,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507208025}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -2303,6 +2303,7 @@ RectTransform:
   - {fileID: 575028611}
   - {fileID: 1302623010}
   - {fileID: 1248788606}
+  - {fileID: 336272350}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3845,7 +3846,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1036565858}
   - {fileID: 1189646594}
-  - {fileID: 336272350}
   - {fileID: 507208029}
   - {fileID: 427160750}
   - {fileID: 1193135845}
