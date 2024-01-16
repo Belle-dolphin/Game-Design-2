@@ -140,10 +140,10 @@ public class Solve : MonoBehaviour
             Debug.Log("Changing level");
 
             SceneManager.UnloadSceneAsync(sceneNameToDelete);
-            SceneManager.LoadScene(sceneNameToAdd);
+            SceneManager.LoadScene(sceneNameToAdd, LoadSceneMode.Additive);
         } else {
             SceneManager.UnloadSceneAsync(sceneNameToDelete);
-            SceneManager.LoadScene(sceneNameToDelete);
+            SceneManager.LoadScene(sceneNameToDelete, LoadSceneMode.Additive);
             // resetLevel();
         }
     }
