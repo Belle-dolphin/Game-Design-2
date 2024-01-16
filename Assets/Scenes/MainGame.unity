@@ -1186,7 +1186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2174b0c940885e42b48f0803e40826f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNameToAdd: Programming problem 1
+  sceneNameToAdd: Money
   taskbarIcon: {fileID: 4080143002938124458, guid: 435f891710988024fbf231266977c60b, type: 3}
 --- !u!61 &1685073389
 BoxCollider2D:
