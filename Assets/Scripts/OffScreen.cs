@@ -10,7 +10,6 @@ public class OffScreen : MonoBehaviour
     Vector3 vectorMainMenu = Vector3.zero;
 
     int loaded = 0;
-    int changed = 0;
 
     private void OnMouseDown()
     {

@@ -110,11 +110,21 @@ public class Solve : MonoBehaviour
             ConditionText.SetText("You win!");
             ButtonText.SetText("Next Level");
             resultScreenObject.SetActive(true);
+            Solve buttonScript = resultScreenObject.GetComponentInChildren<Solve>();
+            if(buttonScript != null)
+            {
+                buttonScript.success = result;
+            }
         } else {
             Debug.Log("Player lost");
             ConditionText.SetText("You lose!");
             ButtonText.SetText("Retry");
             resultScreenObject.SetActive(true);
+            Solve buttonScript = resultScreenObject.GetComponentInChildren<Solve>();
+            if(buttonScript != null)
+            {
+                buttonScript.success = result;
+            }
         }
     }
 
