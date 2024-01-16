@@ -3722,6 +3722,8 @@ MonoBehaviour:
   resultScreenObject: {fileID: 0}
   ConditionText: {fileID: 0}
   ButtonText: {fileID: 0}
+  sceneNameToAdd: Graphs puzzle_3
+  sceneNameToDelete: Graphs puzzle_2
 --- !u!1 &866942519
 GameObject:
   m_ObjectHideFlags: 0
@@ -5313,6 +5315,8 @@ MonoBehaviour:
   resultScreenObject: {fileID: 50068493}
   ConditionText: {fileID: 623380990}
   ButtonText: {fileID: 587445821}
+  sceneNameToAdd: 
+  sceneNameToDelete: 
 --- !u!114 &1387407143
 MonoBehaviour:
   m_ObjectHideFlags: 0
