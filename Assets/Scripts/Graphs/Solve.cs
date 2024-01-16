@@ -17,7 +17,18 @@ public class Solve : MonoBehaviour
     public GameObject resultScreenObject;
     public TextMeshProUGUI ConditionText;
     public TextMeshProUGUI ButtonText;
-    private bool success = false;
+    public bool success = false;
+
+    public string sceneNameToAdd;
+    public string sceneNameToDelete;
+    public int levelNumber;
+    // public Button endLevelButton;
+
+    private void Start()
+    {
+        // Add a listener to the button so that it calls LoadNextScene when clicked
+        // endLevelButton.onClick.AddListener(onClick);
+    }
 
     // Function to compare road IDs with the solution
     public bool CompareRoadIDs()
@@ -72,7 +83,7 @@ public class Solve : MonoBehaviour
 
     public void CheckSolution()
     {
-        success = CompareRoadIDs();
+        setSuccess(CompareRoadIDs());
         
         Debug.Log("Checking solution...");
         Debug.Log(CompareRoadIDs()
@@ -80,6 +91,16 @@ public class Solve : MonoBehaviour
             : "Road IDs do not match the solution");
 
         showResult(success);
+    }
+
+    private void setSuccess(bool state){
+        Debug.Log("setSuccess called with: " + state);
+        success = state;
+    }
+
+    private bool getSuccess(){
+        Debug.Log("getSuccess called with: " + success);
+        return success;
     }
 
 
@@ -104,13 +125,16 @@ public class Solve : MonoBehaviour
 
     public void onClick(){
         Debug.Log("Player clicked");
-        Debug.Log("Current value of success: " + success);
-        if(success){
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Debug.Log("Current value of success: " + getSuccess());
+        if(!getSuccess()){
+            Debug.Log("Changing level");
+
+            SceneManager.UnloadSceneAsync(sceneNameToDelete);
+            SceneManager.LoadScene(sceneNameToAdd);
         } else {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.UnloadSceneAsync(sceneNameToDelete);
+            SceneManager.LoadScene(sceneNameToDelete);
             resetLevel();
         }
     }
-
 }

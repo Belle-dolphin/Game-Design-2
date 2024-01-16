@@ -14,6 +14,7 @@ public class RoadValue : MonoBehaviour
     void Start()
     {
         RoadText.text = weight + "";
+        RoadText.fontSize = 20;
     }
 
     public int getWeight()
