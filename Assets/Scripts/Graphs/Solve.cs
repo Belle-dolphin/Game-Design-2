@@ -126,7 +126,7 @@ public class Solve : MonoBehaviour
     public void onClick(){
         Debug.Log("Player clicked");
         Debug.Log("Current value of success: " + getSuccess());
-        if(!getSuccess()){
+        if(getSuccess()){
             Debug.Log("Changing level");
 
             SceneManager.UnloadSceneAsync(sceneNameToDelete);
@@ -134,7 +134,7 @@ public class Solve : MonoBehaviour
         } else {
             SceneManager.UnloadSceneAsync(sceneNameToDelete);
             SceneManager.LoadScene(sceneNameToDelete);
-            resetLevel();
+            // resetLevel();
         }
     }
 }
