@@ -23,12 +23,16 @@ public class AddScene : MonoBehaviour
                     Instantiate(taskbarIcon, new Vector3(-4.45f, -4.75f, 0f), Quaternion.identity);
                     iconLoaded = true;
                 }
-                else
+                else if (sceneNameToAdd == "Programming problem 1")
                 {
                     Instantiate(taskbarIcon, new Vector3(-0.5f, -4.75f, 0f), Quaternion.identity);
                     iconLoaded = true;
+                } 
+                else
+                {
+                    Instantiate(taskbarIcon, new Vector3(4.5f, -4.75f, 0f), Quaternion.identity);
+                    iconLoaded = true;
                 }
-                
             }
         }
     }

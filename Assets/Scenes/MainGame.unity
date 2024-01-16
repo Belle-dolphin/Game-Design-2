@@ -522,7 +522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNameToAdd: Programming problem 1
-  taskbarIcon: {fileID: 4080143002938124458, guid: 435f891710988024fbf231266977c60b, type: 3}
+  taskbarIcon: {fileID: 3139093608990029757, guid: 435f891710988024fbf231266977c60b, type: 3}
 --- !u!61 &462817563
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -629,7 +629,7 @@ Transform:
   m_GameObject: {fileID: 462817561}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.6, y: 1.2839, z: 0}
+  m_LocalPosition: {x: -7.55, y: 1.63, z: 0}
   m_LocalScale: {x: 1, y: 1.7522, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1187,7 +1187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNameToAdd: Money
-  taskbarIcon: {fileID: 4080143002938124458, guid: 435f891710988024fbf231266977c60b, type: 3}
+  taskbarIcon: {fileID: 5130946835128482595, guid: ba8171ac320b63d438fc19204a6f32c2, type: 3}
 --- !u!61 &1685073389
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1463,7 +1463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNameToAdd: Graphs puzzle_1 tutorial
-  taskbarIcon: {fileID: 4472254124676072194, guid: 4cee721505add0846a52c11917317bf4, type: 3}
+  taskbarIcon: {fileID: 9050125249732539744, guid: 4cee721505add0846a52c11917317bf4, type: 3}
 --- !u!212 &2012482175
 SpriteRenderer:
   m_ObjectHideFlags: 0

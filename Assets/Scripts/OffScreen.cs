@@ -6,41 +6,60 @@ using UnityEngine.SceneManagement;
 public class OffScreen : MonoBehaviour
 {
     public string sceneNameToAdd;
+    public int nrPuzzels;
     Vector3 vectorMainMenu = Vector3.zero;
 
     int loaded = 0;
     int changed = 0;
-    int nrPuzzels = 5; // puzzels to solve TODO make public.
 
     private void OnMouseDown()
     {
         loaded++;
 
-        if (!SceneManager.GetSceneByName(sceneNameToAdd).isLoaded)
+        // scene changed
+        if (sceneNameToAdd.Contains("Programming problem"))
         {
-            // scene changed
-            changed++;
-            if (sceneNameToAdd.Contains("Programming problem"))
+            if (SceneManager.GetSceneByName("Programming problem 1").isLoaded)
             {
-                if (changed % nrPuzzels == 1)
-                {
-                    sceneNameToAdd = "Programming problem 2";
-                }
-                else if (changed % nrPuzzels == 2)
-                {
-                    sceneNameToAdd = "Programming problem 3";
-                }
-                else if (changed % nrPuzzels == 3)
-                {
-                    sceneNameToAdd = "Programming problem 4";
-                }
-                else if (changed % nrPuzzels == 4)
-                {
-                    sceneNameToAdd = "Programming problem 5";
-                }
-                else if (changed % nrPuzzels == 0) { sceneNameToAdd = "Programming problem 1"; }
+                sceneNameToAdd = "Programming problem 1";
+            }
+            else if (SceneManager.GetSceneByName("Programming problem 2").isLoaded)
+            {
+                sceneNameToAdd = "Programming problem 2";
+            }
+            else if (SceneManager.GetSceneByName("Programming problem 3").isLoaded)
+            {
+                sceneNameToAdd = "Programming problem 3";
+            }
+            else if (SceneManager.GetSceneByName("Programming problem 4").isLoaded)
+            {
+                sceneNameToAdd = "Programming problem 4";
+            }
+            else if (SceneManager.GetSceneByName("Programming problem 5").isLoaded)
+            {
+                sceneNameToAdd = "Programming problem 5";
+            }
+        } 
+        else if (sceneNameToAdd.Contains("Graphs puzzle"))
+        {
+            if (SceneManager.GetSceneByName("Graphs puzzle_1 tutorial").isLoaded)
+            {
+                sceneNameToAdd = "Graphs puzzle_1 tutorial";
+            }
+            else if (SceneManager.GetSceneByName("Graphs puzzle_2").isLoaded)
+            {
+                sceneNameToAdd = "Graphs puzzle_2";
+            }
+            else if (SceneManager.GetSceneByName("Graphs puzzle_3").isLoaded)
+            {
+                sceneNameToAdd = "Graphs puzzle_3";
+            }
+            else if (SceneManager.GetSceneByName("Graphs puzzle_4").isLoaded)
+            {
+                sceneNameToAdd = "Graphs puzzle_4";
             }
         }
+        
 
         UnityEngine.SceneManagement.Scene loadedScene = SceneManager.GetSceneByName(sceneNameToAdd);
         GameObject mainMenuObject = GameObject.Find("MainMenu");
